@@ -14,7 +14,7 @@ GitHub and the product knowledge base.
 ## Rules
 
 1. **One duty → one edit place.** Summaries + links are OK; dual full copies are not.
-2. **Behavior changed in a PR** → update **repo** `docs/` (and README/CHANGELOG as needed) in the same PR.
+2. **Every code change** → update **`readmenew.md`, the wiki, and the project change ledger** in the same task, including fixes, refactors, and internal changes. All three are mandatory under [AGENTS.md](../AGENTS.md); missing or inaccessible destinations must be reported as incomplete. Include in-repo documentation updates in the same PR, and update affected `docs/` and README/CHANGELOG content as well.
 3. **After release / user-facing change** → refresh **`docs-imgli/*`** (and hub status if production version moved). Prefer linking to GitHub for long matrices.
 4. **Conflict:** GitHub tag + `CHANGELOG` + latest Release win for product version and APIs.
 5. **Never** put full internal roadmap or VIP secrets into `docs-imgli/`.
@@ -41,7 +41,10 @@ GitHub and the product knowledge base.
 
 ## Agent / human checklist
 
-- [ ] New feature → code + repo docs in one PR  
+- [ ] Every code change → `readmenew.md` updated in the same task / PR
+- [ ] Every code change → affected wiki pages updated in the same task
+- [ ] Every code change → project change ledger records date, change, impact, and validation
+- [ ] All three updates verified and their files / pages listed in the handoff; unresolved destinations reported as incomplete
 - [ ] Ship tag → hub `last_release` / production note + `docs-imgli` version pins  
 - [ ] No second full matrix in KB  
 - [ ] After appearance / theme keys change → update `site-customization-ia.md` + README feature bullets  

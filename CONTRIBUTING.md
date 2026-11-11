@@ -51,7 +51,7 @@ See **[docs/documentation-ssot.md](docs/documentation-ssot.md)** for where docs 
 - **Product site (`docs-imgli/` in the maintainers’ KB → docs.imgli.com)** — end-user how-tos; update after user-facing releases (short pages + links to GitHub for long matrices).
 - **Internal KB (`imgli/*`, hub)** — roadmap/ops only; not for public full copies.
 
-Behavior change in a PR → update repo docs in the **same PR**. Do not maintain a second full matrix only in the KB.
+**Every code change** must update **`readmenew.md`, the wiki, and the project change ledger** in the same task, including fixes, refactors, and internal changes. Follow **[AGENTS.md](AGENTS.md)**: all three updates are required before the task is complete; report any missing or inaccessible destination as incomplete. Include in-repo documentation updates in the **same PR**, and update affected engineering docs as well. Do not maintain a second full matrix only in the KB.
 
 ## Guidelines
 
